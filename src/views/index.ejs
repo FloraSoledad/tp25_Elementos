@@ -8,9 +8,9 @@
     <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
-    <main class="container">
+    <main class="container" id="mainContainer">
       <figure class="logoDH">
-        <img src="/img/logo-DH.png" alt="Logo Digital House">
+        <img src="/img/logo-DH.png" alt="Logo Digital House" onclick="cambiarFondo()">
       </figure>
       <section class="contenido">
         <h1 class="tituloPrincipal"><%= title %></h1>
@@ -25,9 +25,25 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa facere ipsum quia perferendis unde aliquid obcaecati qui voluptate, in est aut minima quas sunt dolores. Eligendi harum reprehenderit impedit.</p>
       </section>
     </main>
-    <script>
-      let miNombre = "flora";
-      console.log(miNombre)
-    </script>
+    <!-- vinculacion interna -->
+
+ <!--    <script>
+      const titulo = document.querySelector('.tituloPrincipal');
+      titulo.textContent = "Comision 16!"
+      const parrafosPares = document.querySelectorAll('.parrafo_par'); 
+
+     for (let i = 0; i < parrafosPares.length; i++) {
+        console.log(parrafosPares[i].textContent);        
+      } 
+
+      parrafosPares.forEach(parrafo => {
+      console.log(parrafo.textContent);
+      });
+      console.log(parrafosPares)
+    </script> -->
+
+
+    <!-- vinculacion externa -->
+    <script src="/js/index.js"></script>
   </body>
 </html>
