@@ -16,6 +16,8 @@ const listado = qs('h2 a');
     qs('body').classList.toggle('fondo')
 }  cambia claro-oscuro haciendo click*/
 
+let menu=documento. querySelector("#menu");
+let logo=documento. querySelector(".logoDH");
 let nombre = prompt('¿Cual es tu nombre?');
 
 subtitulo.textContent += nombre ? nombre : "Invitado";
